@@ -1,25 +1,15 @@
-import { useState } from 'react';
-import './App.css';
-import ch1_File from './chapter1/ch1.md'
-import { useEffect } from 'react';
-import Markdown from 'markdown-to-jsx';
+import { Route, Routes } from "react-router";
+import Home from './pages/home/Home';
 
 
 
 
-
-function App() {
-  const [ch1, setCh1] = useState(null)
-  useEffect(() => {
-    fetch(ch1_File)
-      .then(response => response.text())
-      .then(result => setCh1(result));
-  }, [])
-
-
+const App = () => {
   return (
     <div>
-      {ch1 && <Markdown>{ch1}</Markdown>}
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
