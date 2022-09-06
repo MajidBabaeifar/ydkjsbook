@@ -7,7 +7,7 @@ const Home = () => {
     const dynamicBall = useRef(null)
     const scrollHandleContainer = useRef(null)
     const changeTop = (e) => {
-        dynamicBall.current.style.top = `${Math.floor((e.target.scrollTop / 667) * 25) + 2}px`
+        dynamicBall.current.style.top = `${Math.floor((e.target.scrollTop / 667) * 39)}px`
     }
     const selectDot = (e) => {
         setselectedDot(Math.floor((e.target.scrollTop / 667)) + 1)
@@ -21,14 +21,71 @@ const Home = () => {
                 }}
                     className="pages"
                 >
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
-                    <div className="full-page"></div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+                    <div className="full-page">
+                        <div className="page-container">
+                            <h1>YOU DONT KNOW JS, YET</h1>
+                            <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quibusdam expedita optio, nihil in sint.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, ipsa!</p>
+                            <small>Lorem ipsum dolor sit amet.</small>
+                        </div>
+                    </div>
+
                 </div>
                 <ScrollHandle
                     selectedDot={selectedDot}

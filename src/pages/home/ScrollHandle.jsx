@@ -6,6 +6,7 @@ const ScrollHandle = ({ dynamicBall, scrollHandleContainer, selectedDot }) => {
             className="scroll-handle-container"
         >
             <div ref={dynamicBall} className="dynamic-ball"></div>
+            <div className="glass-bg"></div>
             <div className={selectedDot === 1 ? "handle-circle active" : "handle-circle"}></div>
             <div className={selectedDot === 2 ? "handle-circle active" : "handle-circle"}></div>
             <div className={selectedDot === 3 ? "handle-circle active" : "handle-circle"}></div>
