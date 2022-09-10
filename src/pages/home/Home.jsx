@@ -12,6 +12,10 @@ const Home = () => {
     const selectDot = (e) => {
         setselectedDot(Math.floor((e.target.scrollTop / window.innerHeight)) + 1)
     }
+    const clickDot = (e) => {
+        e.target.className === "handle-circle" &&
+            document.querySelectorAll("div.full-page")[e.target.dataset.item - 1].scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+    }
     return (
         <div>
             <div className="container">
@@ -90,6 +94,7 @@ const Home = () => {
                     selectedDot={selectedDot}
                     scrollHandleContainer={scrollHandleContainer}
                     dynamicBall={dynamicBall}
+                    clickDot={clickDot}
                 />
             </div>
         </div>

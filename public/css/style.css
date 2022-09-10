@@ -89,6 +89,7 @@ html {
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
+    z-index: -1;
 }
 
 .full-page {
